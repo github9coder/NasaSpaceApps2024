@@ -1,7 +1,5 @@
 openai;
 pyvista;
-pyvista.plotting;
-pyvista.examples;
 stpyvista;
 streamlit;
 ephem;
