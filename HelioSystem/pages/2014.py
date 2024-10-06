@@ -7,8 +7,8 @@ import pyvista as pv
 import stpyvista
 
 
-client = OpenAI()
-
+client = OpenAI(api_key = st.secrets["API_KEY"])
+ 
 
 
 global pureResponse
