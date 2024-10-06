@@ -4,7 +4,6 @@ import random
 import time
 from openai import OpenAI
 import pyvista as pv
-import pyvista.examples
 from stpyvista import stpyvista
 
 
