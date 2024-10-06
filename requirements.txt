@@ -1,7 +1,6 @@
 openai;
 pyvista;
 stpyvista;
-from pyvista import examples;
 streamlit;
 ephem;
 datetime
