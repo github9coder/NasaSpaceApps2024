@@ -5,7 +5,7 @@ import time
 from openai import OpenAI
 
 
-client = OpenAI()
+client = OpenAI(API_KEY)
 
 
 
