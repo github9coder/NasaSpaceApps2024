@@ -5,10 +5,10 @@ import time
 from openai import OpenAI
 import openai
 
-openai.api_key = st.secrets[API_KEY]
+openai.api_key = st.secrets["API_KEY"]
 client = OpenAI(
-    organizations = org
-    project = proj
+    organizations =st.secrets["org"]
+    project = st.secrets["proj"]
  
 )
 
