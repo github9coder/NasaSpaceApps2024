@@ -7,7 +7,7 @@ import openai
 
 openai.api_key = st.secrets["API_KEY"]
 client = OpenAI(
-    organizations =st.secrets["org"]
+    organizations = st.secrets["org"]
     project = st.secrets["proj"]
  
 )
