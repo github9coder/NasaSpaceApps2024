@@ -3,5 +3,4 @@ pyvista;
 stpyvista;
 streamlit;
 ephem;
-datetime;
-PIL
+datetime
