@@ -20,7 +20,6 @@ def response_generator(AllMessages):
     response = "Space Bot: " + str(GPTresponse.choices[0].message.content)
     return response
 
-    )
     response = response_generator(st.session_state.AllMessages)
     with st.chat_message("assistant"):
         st.markdown(response)
