@@ -4,8 +4,7 @@ import random
 import time
 from openai import OpenAI
 import pyvista as pv
-from stpyvista import stpyvista
-
+import stpyvista
 
 
 client = OpenAI()
