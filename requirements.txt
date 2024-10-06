@@ -1,7 +1,7 @@
-pip install openai;
-pip install pyvista;
-pip install stpyvista;
-pip install streamlit;
-pip install ephem;
-pip install datetime;
-pip install PIL
+openai;
+pyvista;
+stpyvista;
+streamlit;
+ephem;
+datetime;
+PIL
