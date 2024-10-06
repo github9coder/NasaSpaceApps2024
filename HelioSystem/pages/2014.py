@@ -13,19 +13,16 @@ client = OpenAI(api_key = st.secrets["API_KEY"])
 
 global pureResponse
 def response_generator(AllMessages):
+    global pureResponse
     GPTresponse = client.chat.completions.create(
         model="gpt-4o-mini",
         messages= AllMessages
     )
+    pureResponse = str(GPTresponse.choices[0].message.content)
     response = "Space Bot: " + str(GPTresponse.choices[0].message.content)
-    return response
-
-    response = response_generator(st.session_state.AllMessages)
-    with st.chat_message("assistant"):
-        st.markdown(response)
-    st.session_state.messages.append({"role": "assistant", "content": response})
-    st.session_state.AllMessages.append({"role": "assistant", "content": response})
-
+    for word in response.split():
+        yield word + " "
+        time.sleep(0.05)
 
 
 st.set_page_config(layout="wide")
