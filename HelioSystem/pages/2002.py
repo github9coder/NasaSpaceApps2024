@@ -4,7 +4,7 @@ import random
 import time
 from openai import OpenAI
 
-openai.api_key = st.secrets(API_KEY)
+openai.api_key = st.secrets["API_KEY"]
 client = OpenAI()
 
 
