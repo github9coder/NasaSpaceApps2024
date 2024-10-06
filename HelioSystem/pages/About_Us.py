@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
 with col1:
-    st.image("/workspaces/NasaSpaceApps2024/HelioSystem/imagesheliosystem.png") #, width=1250
+    st.image("HelioSystem/imagesheliosystem.png") #, width=1250
 with col2:
     BackIsClicked = st.button("Back", use_container_width=True)
 if BackIsClicked:
